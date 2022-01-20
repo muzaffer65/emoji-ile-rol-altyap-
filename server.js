@@ -29,7 +29,7 @@ client.login(process.env.BOT_TOKEN);
 client.on('ready', async () => {
 
     console.log('Hazır olun ve tepki vermeye başlayın!');
-    client.user.setActivity('Reaksiyon! | Loz Bey', { type: 'PLAYING' });
+    client.user.setActivity('Reaksiyon! | Developer By: Muzaffer Karaman#1361 ', { type: 'PLAYING' });
 
     let reactions = JSON.parse(fs.readFileSync('./ayarlar/reaksiyon.json', 'utf8'));
 
@@ -107,7 +107,7 @@ client.on('message', async message => {
                 .setTitle('Yardım Menüsü')
                 .setColor('#19ce0e')
                 .setThumbnail(client.user.displayAvatarURL())
-                .setDescription(`Emoji İle Rol Alma Altyapısı | Loz 'Bey ❤️!`)
+                .setDescription(`Emoji İle Rol Alma Altyapısı | Muzaffer Karaman Tarafından Yapılmıştır ❤️!`)
                 .addField(
                     `KOMUTLAR`,
                     `**YARDIM - YARDIM MENÜSÜ**
